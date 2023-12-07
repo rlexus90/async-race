@@ -13,7 +13,7 @@ export class Track {
     private id: string;
     private track: HTMLElement;
     private serverRequest: ServerRequest;
-    private intervalId: NodeJS.Timer | undefined;
+		private intervalId: ReturnType<typeof setTimeout> | undefined;
     private remove: HTMLElement | undefined;
     private run: HTMLElement | undefined;
     private back: HTMLElement | undefined;
