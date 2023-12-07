@@ -1,0 +1,55 @@
+.car svg {
+	width: 100px;
+	height: 100px;
+	transform: scale(-1, 1);
+
+}
+
+.car {
+	margin: -30px 0 -35px 0;
+	padding: 0 20px;
+	width: 100px;
+}
+
+.road {
+	position: relative;
+	flex: 1 0 auto;
+	background-size: 60px 40px;
+	background-repeat: no-repeat;
+	background-position: calc(100vw - 250px) 0;
+	border-bottom: 3px dashed white;
+}
+
+.road-container {
+	display: flex;
+	font-size: 18px;
+
+}
+
+.track {
+
+	.btn {
+		background-color: rgb(229,228,226);
+	}
+}
+
+.run-btn,
+.back-btn {
+	cursor: pointer;
+	margin: 3px 6px;
+	flex: 0 0 20px;
+	height: 100%;
+	color: rgb(148, 244, 212);
+	border: 2px solid rgb(148, 244, 212);
+	border-radius: 4px;
+	text-align: center;
+
+
+}
+
+.run-btn.blocked,
+.back-btn.blocked {
+	pointer-events: none;
+	color: rgb(172, 172, 172);
+	border: 2px solid rgb(172, 172, 172);
+}

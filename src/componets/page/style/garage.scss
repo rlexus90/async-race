@@ -1,0 +1,76 @@
+.form-create,
+.form-update {
+	display: flex;
+	align-items: center;
+	height: 30px;
+
+	input {
+		margin: 0 10px;
+		height: 20px;
+		background-color: #eaeaea;
+	}
+}
+
+.track-nav {
+	z-index: 3;
+	margin-top: 15px;
+	display: flex;
+	align-items: center;
+}
+
+button {
+	z-index: 3;
+	margin: 5px 10px;
+}
+
+.btn {
+	background-color: rgb(148, 244, 212);
+}
+
+.btn.blocked {
+	pointer-events: none;
+	background-color: #b0a9a9;
+	cursor: default;
+}
+
+@keyframes error {
+	0% {
+		transform: translateX(3px);
+	}
+
+	25% {
+		transform: translateX(-3px);
+	}
+
+	50% {
+		transform: translateX(3px);
+	}
+
+	75% {
+		transform: translateX(-3px);
+	}
+
+	100% {
+		transform: translateX(3px);
+	}
+}
+
+.btn.error {
+	animation: error 300ms;
+}
+
+.garage-nav {
+	margin-top: 30px;
+
+	button {
+		cursor: pointer;
+		background-color: rgb(148, 244, 212);
+	}
+
+	button.blocked {
+		background-color: #b0a9a9;
+		cursor: default;
+		pointer-events: none;
+	}
+
+}
